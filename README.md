@@ -13,9 +13,9 @@ var ee = new EventEmitter();
 for(var i = 0; i < 100; ++i){
     new Promise(function(resolve, reject){
         var purger = new PurgeableListener({autoPurge: true});
-        function onData(data){}
-        function onError(err){}
-        function onFoo(err){}
+        function onData(data){resolve(data)}
+        function onError(err){reject(data)}
+        function onFoo(data){resolve(fooFn(data))}
 
         ee.on('error', purger.enpurgeable(onError, ee.removeListener.bind(ee, 'error')));
         ee.on('done', purger.enpurgeable(onData, ee.removeListener.bind(ee, 'done')));
