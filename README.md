@@ -23,7 +23,7 @@ for(var i = 0; i < 100; ++i){
     });
 
     ee.emit(i%2 ? 'error' : 'done');
-    // uncalled listeners are removed automatically!!
+    // listeners are removed automatically!!
 }
 ```
 
