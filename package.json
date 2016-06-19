@@ -1,0 +1,23 @@
+{
+  "name": "purgable-listener",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "listener",
+    "eventemitter"
+  ],
+  "author": "berlysia <berlysia@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlysia/purgable-listener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/berlysia/purgable-listener/issues"
+  },
+  "homepage": "https://github.com/berlysia/purgable-listener#readme"
+}
